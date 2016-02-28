@@ -2337,6 +2337,13 @@ cities =
             "code": ""
         }
     ];
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("data/listOmid.json",{"province":"تهران" ,"lname":"عارف"} , function (status) {
+          alert(status);
+     });
+    });
+});
 var parts=function()
 {
     var sel2=document.getElementById("sel2");
@@ -2364,7 +2371,7 @@ var names=function()
     {
         if (sel2.value==cities[j].part && sel1.value==cities[j].province)
         {
-            var fname=cities[j].code+ cities[j].fname +" "+ cities[j].lname;
+            var fname= cities[j].prefix+" "+cities[j].fname +" "+ cities[j].lname+"-"+cities[j].code;
             var list=document.createElement('LI');
             var text=document.createTextNode(fname);
             list.appendChild(text);
