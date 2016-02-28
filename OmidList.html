@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>لیست امید سینا</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <body>
+        <div id="province" style="float: right; margin: 45px">
+            <form role="form">
+                <div class="form-group">
+                    <label for="sel1" style="float: right">استان</label>
+                    <select class="form-control" id="sel1" onchange="parts()">
+                        <option></option>
+                        <option >آذربایجان شرقی</option>
+                        <option >آذربایجان غربی</option>
+                        <option>اردبیل</option>
+                        <option>اصفهان</option>
+                        <option>البرز</option>
+                        <option>ایلام</option>
+                        <option>بوشهر</option>
+                        <option>تهران</option>
+                        <option>چهارمحال و بختیاری</option>
+                        <option>خراسان جنوبی</option>
+                        <option>خراسان رضوی</option>
+                        <option>خراسان شمالی</option>
+                        <option>خوزستان</option>
+                        <option>زنجان</option>
+                        <option>سمنان</option>
+                        <option>سیستان و بلوچستان</option>
+                        <option>فارس</option>
+                        <option>قزوین</option>
+                        <option>قم</option>
+                        <option>کردستان</option>
+                        <option>کرمان</option>
+                        <option>کرمانشاه</option>
+                        <option>کهگیلویه و بویر احمد</option>
+                        <option>گلستان</option>
+                        <option>گیلان</option>
+                        <option>لرستان</option>
+                        <option>مازندران</option>
+                        <option>مرکزی</option>
+                        <option>هرمزگان</option>
+                        <option>همدان</option>
+                        <option>یزد</option>
+                        <option>اقلیت‌های دینی</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div id="cities" style="margin: 45px ; float: right">
+            <form role="form">
+                <div class="form-group">
+                    <label for="sel1" style="float: right">حوزه</label>
+                    <select class="form-control" id="sel2" onchange="names()">
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div>
+            <ul id="name">
+            </ul>
+        </div>
+    </body>
+<script src="JS.js" type="text/javascript"></script>
+</html>
